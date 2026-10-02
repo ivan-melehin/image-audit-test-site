@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Страница для проверки обхода второй страницы и обнаружения пяти изображений.">
+<meta property="og:title" content="Image-Audit Test Site — О проекте">
+<meta property="og:image" content="images/og-about-placeholder.png">
+<title>Image-Audit Test Site — О проекте</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;line-height:1.6;color:#20242a;background:#f5f7fa}
+header{background:#18212b;color:white;padding:24px 0}
+nav,main,footer{max-width:1100px;margin:auto;padding:0 20px}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;padding:8px 12px;border-radius:6px}
+nav a:hover{background:#2d3b49}
+.logo{font-weight:700;font-size:20px;margin-right:auto}
+.hero{padding:45px 0 25px}
+h1{font-size:38px;margin:0 0 12px}
+h2{margin-top:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin:25px 0 50px}
+.card{background:white;border:1px solid #dce2e8;border-radius:10px;padding:18px;box-shadow:0 3px 12px #0000000b}
+.placeholder{display:block;width:100%;height:190px;object-fit:cover;border:2px dashed #aab4bf;background:#eef1f4;border-radius:8px;margin-bottom:15px}
+.meta{font-size:14px;color:#65717c}
+.wide,.note{margin:25px 0;padding:20px;background:#fff;border-left:4px solid #73b0de}
+footer{padding:30px 20px;color:#697580;border-top:1px solid #dce2e8}
+@media(max-width:600px){h1{font-size:30px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><nav>
+<div class="logo">Image-Audit Test Site</div>
+<a href="index.html">Главная</a>
+<a href="about.html">О проекте</a>
+<a href="catalog.html">Каталог</a>
+<a href="index.html#images">Изображения</a>
+<a href="index.html#contacts">Контакты</a>
+<a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+</nav></header>
+<main>
+<section class="hero"><h1>О проекте</h1><p>Страница для проверки обхода второй страницы и обнаружения пяти изображений.</p></section>
+<section id="images"><h2>Изображения</h2><div class="grid"><article class="card">
+<img src="img/image_6.png" class="placeholder" id="image-1" alt="Изображение раздела о проекте №1" title="О проекте №1" width="800" height="600">
+<h3>О проекте №1</h3>
+<p class="meta">IMG / src / alt / title / width / height</p>
+</article><article class="card">
+<img src="img/test3.jpg" class="placeholder" id="image-2" alt="Изображение раздела о проекте №2" title="О проекте №2" width="800" height="600">
+<h3>О проекте №2</h3>
+<p class="meta">IMG / src / alt / title / width / height</p>
+</article><article class="card">
+<img src="img/image_8.png" class="placeholder" id="image-3" alt="Изображение раздела о проекте №3" title="О проекте №3" width="800" height="600">
+<h3>О проекте №3</h3>
+<p class="meta">IMG / src / alt / title / width / height</p>
+</article><article class="card">
+<img src="img/image_9.png" class="placeholder" id="image-4" alt="Изображение раздела о проекте №4" title="О проекте №4" width="800" height="600">
+<h3>О проекте №4</h3>
+<p class="meta">IMG / src / alt / title / width / height</p>
+</article><article class="card">
+<img src="img/image_10.png" class="placeholder" id="image-5" alt="Изображение раздела о проекте №5" title="О проекте №5" width="800" height="600">
+<h3>О проекте №5</h3>
+<p class="meta">IMG / src / alt / title / width / height</p>
+</article></div></section>
+<div class="note"><strong>Важно:</strong> файлы изображений намеренно не включены в архив. Добавьте их в папку <code>images/</code> с именами image_1.png ... image_15.png.</div>
+<p><a href="index.html">← Главная</a> · <a href="catalog.html">Каталог →</a></p>
+</main>
+<footer>Image-Audit Test Site · <a href="index.html">Главная</a> · <a href="about.html">О проекте</a> · <a href="catalog.html">Каталог</a></footer>
+</body>
+</html>
